@@ -33,7 +33,7 @@
       "value": "Yes"
     },
     "emailContactAsc": {
-      "value": "Administrator@devsivale.onmicrosoft.com"
+      "value": "admin@devsivale.onmicrosoft.com"
     },
     "enableAscForServers": {
       "value": "DeployIfNotExists"
@@ -78,7 +78,7 @@
       "value": "DeployIfNotExists"
     },
     "enableSecuritySolution": {
-      "value": null
+      "value": "Yes"
     },
     "enableMonitorBaselines": {
       "value": "Yes"
@@ -99,7 +99,7 @@
       "value": "rg-amba-monitoring-001"
     },
     "emailContactActionGroup": {
-      "value": "Administrator@devsivale.onmicrosoft.com"
+      "value": "admin@devsivale.onmicrosoft.com"
     },
     "connectivitySubscriptionId": {
       "value": null
@@ -108,22 +108,22 @@
       "value": null
     },
     "connectivityLocation": {
-      "value": null
+      "value": "[deployment().location]"
     },
     "enableDdoS": {
-      "value": null
+      "value": "No"
     },
     "enablePrivateDnsZones": {
-      "value": null
+      "value": "No"
     },
     "privateDnsZonesToDeploy": {
-      "value": null
+      "value": []
     },
     "enableVpnGw": {
-      "value": null
+      "value": "No"
     },
     "enableVpnActiveActive": {
-      "value": null
+      "value": "No"
     },
     "gwRegionalOrAz": {
       "value": null
@@ -135,13 +135,13 @@
       "value": null
     },
     "vpnGateWayScaleUnit": {
-      "value": null
+      "value": "1"
     },
     "subnetMaskForGw": {
       "value": null
     },
     "enableErGw": {
-      "value": null
+      "value": "No"
     },
     "erAzSku": {
       "value": null
@@ -153,22 +153,22 @@
       "value": null
     },
     "expressRouteScaleUnit": {
-      "value": null
+      "value": "1"
     },
     "enableHub": {
       "value": "No"
     },
     "enableAzFw": {
-      "value": null
+      "value": "No"
     },
     "enableAzFwDnsProxy": {
-      "value": null
+      "value": "No"
     },
     "firewallSku": {
-      "value": null
+      "value": "Standard"
     },
     "firewallZones": {
-      "value": null
+      "value": []
     },
     "subnetMaskForAzFw": {
       "value": null
@@ -177,7 +177,7 @@
       "value": null
     },
     "enablevWANRoutingIntent": {
-      "value": null
+      "value": "No"
     },
     "internetTrafficRoutingPolicy": {
       "value": null
@@ -186,28 +186,28 @@
       "value": null
     },
     "vWANHubRoutingPreference": {
-      "value": null
+      "value": "ExpressRoute"
     },
     "vWANHubCapacity": {
-      "value": null
+      "value": "2"
     },
     "addressPrefixSecondary": {
       "value": null
     },
     "connectivityLocationSecondary": {
-      "value": null
+      "value": "[deployment().location]"
     },
     "enablePrivateDnsZonesSecondary": {
       "value": "No"
     },
     "privateDnsZonesToDeploySecondary": {
-      "value": null
+      "value": []
     },
     "enableVpnGwSecondary": {
-      "value": null
+      "value": "No"
     },
     "enableVpnActiveActiveSecondary": {
-      "value": null
+      "value": "No"
     },
     "gwRegionalOrAzSecondary": {
       "value": null
@@ -219,13 +219,13 @@
       "value": null
     },
     "vpnGateWayScaleUnitSecondary": {
-      "value": null
+      "value": "1"
     },
     "subnetMaskForGwSecondary": {
       "value": null
     },
     "enableErGwSecondary": {
-      "value": null
+      "value": "No"
     },
     "erAzSkuSecondary": {
       "value": null
@@ -237,7 +237,7 @@
       "value": null
     },
     "expressRouteScaleUnitSecondary": {
-      "value": null
+      "value": "1"
     },
     "enableSecondaryRegion": {
       "value": "Yes"
@@ -246,16 +246,16 @@
       "value": "No"
     },
     "enableAzFwSecondary": {
-      "value": null
+      "value": "No"
     },
     "enableAzFwDnsProxySecondary": {
-      "value": null
+      "value": "No"
     },
     "firewallSkuSecondary": {
-      "value": null
+      "value": "Standard"
     },
     "firewallZonesSecondary": {
-      "value": null
+      "value": []
     },
     "subnetMaskForAzFwSecondary": {
       "value": null
@@ -264,7 +264,7 @@
       "value": null
     },
     "enablevWANRoutingIntentSecondary": {
-      "value": null
+      "value": "No"
     },
     "internetTrafficRoutingPolicySecondary": {
       "value": null
@@ -273,10 +273,10 @@
       "value": null
     },
     "vWANHubRoutingPreferenceSecondary": {
-      "value": null
+      "value": "ExpressRoute"
     },
     "vWANHubCapacitySecondary": {
-      "value": null
+      "value": "2"
     },
     "identitySubscriptionId": {
       "value": null
@@ -288,7 +288,7 @@
       "value": "Yes"
     },
     "denyPipForIdentity": {
-      "value": null
+      "value": "No"
     },
     "enableVmBackupForIdentity": {
       "value": "Yes"
@@ -300,7 +300,7 @@
       "value": null
     },
     "corpConnectedLzSubscriptionId": {
-      "value": null
+      "value": []
     },
     "corpLzSubscriptionId": {
       "value": []
@@ -309,7 +309,7 @@
       "value": []
     },
     "enableLzDdoS": {
-      "value": null
+      "value": "No"
     },
     "denyPublicEndpoints": {
       "value": "Yes"
@@ -318,7 +318,7 @@
       "value": "Yes"
     },
     "enablePrivateDnsZonesForLzs": {
-      "value": null
+      "value": "No"
     },
     "enableEncryptionInTransit": {
       "value": "No"
@@ -369,10 +369,10 @@
       "value": "No"
     },
     "enableDecommissioned": {
-      "value": "Audit"
+      "value": "Yes"
     },
     "enableSandbox": {
-      "value": "Audit"
+      "value": "Yes"
     },
     "enableSqlAudit": {
       "value": "No"
@@ -405,175 +405,175 @@
       "value": "Yes"
     },
     "delayCount": {
-      "value": null
+      "value": 45
     },
     "currentDateTimeUtcNow": {
-      "value": null
+      "value": "[utcNow()]"
     },
     "enableWsCMKInitiatives": {
       "value": "No"
     },
     "wsCMKSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsAPIMInitiatives": {
       "value": "No"
     },
     "wsAPIMSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsAppServicesInitiatives": {
       "value": "No"
     },
     "wsAppServicesSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsAutomationInitiatives": {
       "value": "No"
     },
     "wsAutomationSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsCognitiveServicesInitiatives": {
       "value": "No"
     },
     "wsCognitiveServicesSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsComputeInitiatives": {
       "value": "No"
     },
     "wsComputeSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsContainerAppsInitiatives": {
       "value": "No"
     },
     "wsContainerAppsSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsContainerInstanceInitiatives": {
       "value": "No"
     },
     "wsContainerInstanceSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsContainerRegistryInitiatives": {
       "value": "No"
     },
     "wsContainerRegistrySelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsCosmosDbInitiatives": {
       "value": "No"
     },
     "wsCosmosDbSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsDataExplorerInitiatives": {
       "value": "No"
     },
     "wsDataExplorerSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsDataFactoryInitiatives": {
       "value": "No"
     },
     "wsDataFactorySelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsEventGridInitiatives": {
       "value": "No"
     },
     "wsEventGridSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsEventHubInitiatives": {
       "value": "No"
     },
     "wsEventHubSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsKeyVaultSupInitiatives": {
       "value": "No"
     },
     "wsKeyVaultSupSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsKubernetesInitiatives": {
       "value": "No"
     },
     "wsKubernetesSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsMachineLearningInitiatives": {
       "value": "No"
     },
     "wsMachineLearningSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsMySQLInitiatives": {
-      "value": null
+      "value": "No"
     },
     "wsMySQLSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsNetworkInitiatives": {
-      "value": null
+      "value": "No"
     },
     "wsNetworkSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsOpenAIInitiatives": {
       "value": "No"
     },
     "wsOpenAISelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsPostgreSQLInitiatives": {
       "value": "No"
     },
     "wsPostgreSQLSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsServiceBusInitiatives": {
       "value": "No"
     },
     "wsServiceBusSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsSQLInitiatives": {
       "value": "No"
     },
     "wsSQLSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsStorageInitiatives": {
       "value": "No"
     },
     "wsStorageSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsSynapseInitiatives": {
       "value": "No"
     },
     "wsSynapseSelectorMG": {
-      "value": null
+      "value": []
     },
     "enableWsVirtualDesktopInitiatives": {
       "value": "No"
     },
     "wsVirtualDesktopSelectorMG": {
-      "value": null
+      "value": []
     },
     "regulatoryComplianceInitativesToAssign": {
-      "value": null
+      "value": []
     },
     "regCompPolParAusGovIsmRestrictedVmAdminsExclude": {
       "value": null
     },
     "regCompPolParAusGovIsmRestrictedResourceTypes": {
-      "value": null
+      "value": "all"
     },
     "regCompPolParMPAACertificateThumb": {
       "value": null
@@ -591,10 +591,10 @@
       "value": null
     },
     "regCompPolParSovBaseConfRegions": {
-      "value": null
+      "value": []
     },
     "regCompPolParSovBaseGlobalRegions": {
-      "value": null
+      "value": []
     },
     "regCompPolParSwift2020VmAdminsInclude": {
       "value": null
@@ -648,16 +648,18 @@
       "value": null
     },
     "regCompPolParSoc2Type2AllowedRegistries": {
-      "value": null
+      "value": "^[^\\/]+\\.azurecr\\.io\\/.+$"
     },
     "regCompPolParSoc2Type2MaxCpuUnits": {
-      "value": null
+      "value": "200m"
     },
     "regCompPolParSoc2Type2MaxMemoryBytes": {
-      "value": null
+      "value": "1Gi"
     },
     "listOfResourceTypesDisallowedForDeletion": {
-      "value": null
+      "value": [
+        "microsoft.managedidentity/userassignedidentities"
+      ]
     }
   }
 }
